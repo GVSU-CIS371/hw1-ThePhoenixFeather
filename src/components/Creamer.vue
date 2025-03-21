@@ -4,13 +4,13 @@
       v-for="index in 5"
       :key="index"
       class="foam"
-      :style="{ backgroundColor: currentCreamer }"
+      :style="{ backgroundColor: currentCream }"
     ></div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { currentCreamer } from '../stores/beverage';
+import { currentCream } from '../stores/beverage';
 </script>
 
 <style lang="scss" scoped>

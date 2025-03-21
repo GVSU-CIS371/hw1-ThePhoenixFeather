@@ -1,3 +1,5 @@
+// Work done by Nathaniel Kidd
+
 import { ref, Ref } from "vue";
 
 interface BaseBeverageType {
@@ -85,7 +87,10 @@ const syrups: Ref<SyrupType[]> = ref([
 ]);
 
 const currentTemp = ref(temps.value[1]);
+const currentBase = ref(bases.value[1]);
+const currentCream = ref(creamers.value[1].color);
+const currentSyrup = ref(syrups.value[1].color);
 
 export type { BaseBeverageType, CreamerType, SyrupType };
 export { temps, bases, creamers, syrups };
-export { currentTemp };
+export { currentTemp, currentBase, currentCream, currentSyrup };
